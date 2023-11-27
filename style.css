@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 15px auto;
+}
+.gallery-frame {
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    margin: auto;
+    position: relative;
+}
+#img-holder img {
+    width: 100%;
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#prev {
+    background-image: url(left_arrow.jpg);
+    left: 15px;
+}
+#next {
+    background-image: url(right_arrow.png);
+    right: 15px;
+}
+#img-number {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 15px;
+    border-radius: 5px;
+}
